@@ -46,7 +46,7 @@ img { display: block; max-width: 100%; user-select: none; pointer-events: none; 
 
 /* kubstr2 */
 .kubstr2 { background-image: url('assets/fon3.png'); }
-.kosnites { left: 12.4%; bottom: 25%; width: 75.2%; }
+.kosnites { left: 12.4%; bottom: 20%; width: 75.2%; }
 .cube-wrap { left: 46.97%; top: 49.03%; width: 52.2%; transform: translate(-50%, -50%); }
 .cube-closed { width: 100%; animation: levitate 3.2s ease-in-out infinite; }
 .cube-open { left: 50%; top: 49.94%; width: 48%; transform: translate(-50%, -50%); opacity: 0; }

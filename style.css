@@ -79,7 +79,7 @@ img { display: block; max-width: none; user-select: none; pointer-events: none; 
 .vivod1 .exit2 img { width: 100%; }
 .vivod-title-balance { left: 47.0%; top: 27.2%; transform: none; font-size: clamp(14px, 2.1vw, 14px); text-align: left; min-width: 90px; }
 .input-window {
-  left: 23.8%; top: 73%; width: 52.7%; height: 3.7%;
+  left: 23.8%; top: 70%; width: 52.7%; height: 3.7%;
   border: 2px solid #3d4566; border-radius: 10px; background: white; z-index: 8;
   display: flex; align-items: center; justify-content: center;
   font-size: clamp(14px, 2.55vw, 17px); font-weight: 900; color: #3d4566;
@@ -89,7 +89,7 @@ img { display: block; max-width: none; user-select: none; pointer-events: none; 
 .keypad .digit { width: 100%; }
 .keypad img { width: 100%; }
 .keypad .zero { grid-column: 2; }
-.withdraw { left: 20%; top: 79%; width: 60.4%; z-index: 8; }
+.withdraw { left: 20%; top: 76%; width: 60.4%; z-index: 8; }
 .withdraw img { width: 100%; }
 
 

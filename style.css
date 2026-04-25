@@ -33,7 +33,7 @@ img { display: block; max-width: 100%; user-select: none; pointer-events: none; 
 /* glavnaya */
 .glavnaya { background-image: url('assets/fon1.png'); }
 .glavnaya .balance-top { left: 2.2%; top: 6.15%; width: 24.1%; }
-.glavnaya .balance-main { left: 7.7%; top: 6.77%; font-size: clamp(12px, 1.95vw, 13px); }
+.glavnaya .balance-main { left: 7.7%; top: 6.77%; font-size: clamp(14px, 1.95vw, 13px); }
 .glavnaya .kub-main { right: 2.8%; top: 12.0%; width: 33.6%; }
 
 /* kubstr */
@@ -66,12 +66,12 @@ img { display: block; max-width: 100%; user-select: none; pointer-events: none; 
 .vivod1 { background-image: url('assets/fon4.png'); }
 .vivod-panel { left: 0; top: 11%; width: 100%; z-index: 3; }
 .vivod1 .exit2 { right: 4.26%; top: 9.65%; width: 9.55%; z-index: 8; }
-.vivod-title-balance { left: 47.0%; top: 24.85%; transform: none; font-size: clamp(12px, 2.1vw, 14px); text-align: left; min-width: 90px; }
+.vivod-title-balance { left: 47.0%; top: 24.85%; transform: none; font-size: clamp(14px, 2.1vw, 14px); text-align: left; min-width: 90px; }
 .input-window {
   left: 23.8%; top: 65.04%; width: 52.7%; height: 3.7%;
   border: 2px solid #3d4566; border-radius: 10px; background: white; z-index: 8;
   display: flex; align-items: center; justify-content: center;
-  font-size: clamp(12px, 2.55vw, 17px); font-weight: 900; color: #3d4566;
+  font-size: clamp(14px, 2.55vw, 17px); font-weight: 900; color: #3d4566;
   overflow: hidden; padding: 0 10px;
 }
 .keypad { position: absolute; left: 23.8%; top: 29.11%; width: 52.7%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4.8% 5.2%; z-index: 8; }

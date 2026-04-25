@@ -3,15 +3,21 @@ html, body { margin: 0; min-height: 100%; background: #111; overflow-x: hidden; 
 button { appearance: none; border: 0; background: transparent; padding: 0; cursor: pointer; }
 img { display: block; max-width: none; user-select: none; pointer-events: none; }
 
-#app { width: 100%; min-height: 100dvh; display: flex; justify-content: center; background: #111; }
+#app {
+  width: 100vw;
+  height: 100dvh;
+  min-height: 100dvh;
+  background: #111;
+  overflow: hidden;
+}
 .screen {
   position: relative;
-  width: min(100vw, 660px);
+  width: 100vw;
+  height: 100dvh;
   min-height: 100dvh;
-  aspect-ratio: 660 / 1235;
   overflow: hidden;
-  background-size: cover;
-  background-position: top center;
+  background-size: 100% 100%;
+  background-position: center;
   background-repeat: no-repeat;
 }
 

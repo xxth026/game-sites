@@ -75,7 +75,7 @@ img { display: block; max-width: none; user-select: none; pointer-events: none; 
 /* vivod1 */
 .vivod1 { background-image: url('assets/fon4.png'); }
 .vivod-panel { left: 0; top: 11%; width: 100%; z-index: 3; }
-.vivod1 .exit2 { right: 3.7%; top: 9.65%; width: 9.55%; z-index: 8; }
+.vivod1 .exit2 { right: 3.5%; top: 9.65%; width: 9.55%; z-index: 8; }
 .vivod1 .exit2 img { width: 100%; }
 .vivod-title-balance { left: 47.0%; top: 27.2%; transform: none; font-size: clamp(14px, 2.1vw, 14px); text-align: left; min-width: 90px; }
 .input-window {

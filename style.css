@@ -38,8 +38,8 @@ img { display: block; max-width: none; user-select: none; pointer-events: none; 
 .glavnaya { background-image: url('assets/fon1.png'); }
 .glavnaya .balance-top { left: 2.2%; top: 1.5%; width: 24.1%; } 
 .glavnaya .balance-top img { width: 100%; }
-.glavnaya .balance-main { left: 7.7%; top: 2.12%; font-size: clamp(14px, 1.95vw, 13px); }
-.glavnaya .kub-main { right: 2.8%; top: 7.35%; width: 33.6%; }
+.glavnaya .balance-main { left: 7.7%; top: 2.5%; font-size: clamp(14px, 1.95vw, 13px); }
+.glavnaya .kub-main { right: 2.8%; top: 7.6%; width: 33.6%; }
 .glavnaya .kub-main img { width: 100%; }
 
 /* kubstr */

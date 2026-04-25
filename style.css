@@ -45,8 +45,11 @@ img { display: block; max-width: none; user-select: none; pointer-events: none; 
 /* kubstr */
 .kubstr { background-image: url('assets/fon2.png'); }
 .kubstr .take { left: 46.03%; top: 38.47%; width: 28.8%; }
+.kubstr .take img { width: 100%; }
 .kubstr .exit1 { right: 3.76%; top: 13.42%; width: 9.24%; }
+.kubstr .exit1 img { width: 100%; }
 .kubstr .received { left: 11.4%; top: 37.4%; width: 77.9%; display: none; }
+.kubstr .received img { width: 100%; }
 .kubstr.claimed .received { display: block; }
 .kubstr.claimed .take { display: none; }
 

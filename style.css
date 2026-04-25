@@ -85,11 +85,11 @@ img { display: block; max-width: none; user-select: none; pointer-events: none; 
   font-size: clamp(14px, 2.55vw, 17px); font-weight: 900; color: #3d4566;
   overflow: hidden; padding: 0 10px;
 }
-.keypad { position: absolute; left: 23.8%; top: 29.11%; width: 52.7%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4.8% 5.2%; z-index: 8; }
+.keypad { position: absolute; left: 23.8%; top: 29.11%; width: 48%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4.8% 5.2%; z-index: 8; }
 .keypad .digit { width: 100%; }
 .keypad img { width: 100%; }
 .keypad .zero { grid-column: 2; }
-.withdraw { left: 20.6%; top: 71.26%; width: 60.4%; z-index: 8; }
+.withdraw { left: 18%; top: 71.26%; width: 60.4%; z-index: 8; }
 .withdraw img { width: 100%; }
 
 

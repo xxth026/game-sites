@@ -1,0 +1,84 @@
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; min-height: 100%; background: #111; overflow-x: hidden; font-family: Arial, sans-serif; touch-action: manipulation; }
+button { appearance: none; border: 0; background: transparent; padding: 0; cursor: pointer; }
+img { display: block; max-width: 100%; user-select: none; pointer-events: none; }
+
+#app { width: 100%; min-height: 100dvh; display: flex; justify-content: center; background: #111; }
+.screen {
+  position: relative;
+  width: min(100vw, 660px);
+  min-height: 100dvh;
+  aspect-ratio: 660 / 1434;
+  overflow: hidden;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.bg-button { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; }
+.abs { position: absolute; z-index: 5; }
+.btn-img { transition: transform .08s ease, filter .08s ease; }
+.btn-img:active { transform: scale(.96); filter: brightness(.95); }
+
+.balance-value {
+  position: absolute;
+  z-index: 7;
+  color: #ffffff;
+  font-weight: 900;
+  text-shadow: 2px 2px 0 #2f3858, -2px 2px 0 #2f3858, 2px -2px 0 #2f3858, -2px -2px 0 #2f3858, 0 2px 0 #2f3858, 2px 0 0 #2f3858, 0 -2px 0 #2f3858, -2px 0 0 #2f3858;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* glavnaya */
+.glavnaya { background-image: url('assets/fon1.png'); }
+.glavnaya .balance-top { left: 2.2%; top: 6.15%; width: 24.1%; }
+.glavnaya .balance-main { left: 7.7%; top: 6.77%; font-size: clamp(8px, 1.95vw, 13px); }
+.glavnaya .kub-main { right: 2.8%; top: 12.0%; width: 33.6%; }
+
+/* kubstr */
+.kubstr { background-image: url('assets/fon2.png'); }
+.kubstr .take { left: 46.03%; top: 38.47%; width: 28.8%; }
+.kubstr .exit1 { right: 3.76%; top: 13.42%; width: 9.24%; }
+.kubstr .received { left: 11.4%; top: 37.4%; width: 77.9%; display: none; }
+.kubstr.claimed .received { display: block; }
+.kubstr.claimed .take { display: none; }
+
+/* kubstr2 */
+.kubstr2 { background-image: url('assets/fon3.png'); }
+.kosnites { left: 12.4%; bottom: 8%; width: 75.2%; }
+.cube-wrap { left: 46.97%; top: 49.03%; width: 52.2%; transform: translate(-50%, -50%); }
+.cube-closed { width: 100%; animation: levitate 3.2s ease-in-out infinite; }
+.cube-open { left: 50%; top: 49.94%; width: 48%; transform: translate(-50%, -50%); opacity: 0; }
+.premium { left: 50%; top: 49.24%; width: 64.86%; transform: translate(-50%, -50%) scale(.02); opacity: 0; transform-origin: center center; }
+.telegram-text { left: 50%; top: 62.52%; width: 68%; transform: translateX(-50%); opacity: 0; }
+.kubstr2.opened .cube-closed { display: none; }
+.kubstr2.opened .cube-open { animation: cubeDown 2s ease-in forwards; opacity: 1; }
+.kubstr2.opened .premium { animation: prizeGrow 3s ease-out .25s forwards; }
+.kubstr2.opened .telegram-text { animation: fadeUp .7s ease-out 3s forwards; }
+.kubstr2.opened .kosnites { display: none; }
+@keyframes levitate { 0%,100% { transform: translateY(-40px); } 50% { transform: translateY(40px); } }
+@keyframes cubeDown { 0% { transform: translate(-50%, -50%); opacity: 1; } 100% { transform: translate(-50%, 95%); opacity: 0; } }
+@keyframes prizeGrow { 0% { transform: translate(-50%, -50%) scale(.02); opacity: 0; } 25% { opacity: 1; } 100% { transform: translate(-50%, -50%) scale(1); opacity: 1; } }
+@keyframes fadeUp { from { opacity: 0; transform: translate(-50%, 20px); } to { opacity: 1; transform: translate(-50%, 0); } }
+
+/* vivod1 */
+.vivod1 { background-image: url('assets/fon4.png'); }
+.vivod-panel { left: 0; top: 11%; width: 100%; z-index: 3; }
+.vivod1 .exit2 { right: 4.26%; top: 9.65%; width: 9.55%; z-index: 8; }
+.vivod-title-balance { left: 47.0%; top: 24.85%; transform: none; font-size: clamp(9px, 2.1vw, 14px); text-align: left; min-width: 90px; }
+.input-window {
+  left: 23.8%; top: 65.04%; width: 52.7%; height: 3.7%;
+  border: 2px solid #3d4566; border-radius: 10px; background: white; z-index: 8;
+  display: flex; align-items: center; justify-content: center;
+  font-size: clamp(10px, 2.55vw, 17px); font-weight: 900; color: #3d4566;
+  overflow: hidden; padding: 0 10px;
+}
+.keypad { position: absolute; left: 23.8%; top: 29.11%; width: 52.7%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4.8% 5.2%; z-index: 8; }
+.keypad .digit { width: 100%; }
+.keypad .zero { grid-column: 2; }
+.withdraw { left: 20.6%; top: 71.26%; width: 60.4%; z-index: 8; }
+
+@media (min-aspect-ratio: 660/1434) {
+  .screen { width: min(calc(100dvh * 660 / 1434), 660px); height: 100dvh; min-height: auto; }
+}

@@ -10,7 +10,7 @@ img { display: block; max-width: 100%; user-select: none; pointer-events: none; 
   min-height: 100dvh;
   aspect-ratio: 660 / 1235;
   overflow: hidden;
-  background-size: contain;
+  background-size: 100% 100%;
   background-position: top center;
   background-repeat: no-repeat;
 }

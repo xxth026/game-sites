@@ -85,7 +85,7 @@ img { display: block; max-width: none; user-select: none; pointer-events: none; 
   font-size: clamp(14px, 2.55vw, 17px); font-weight: 900; color: #3d4566;
   overflow: hidden; padding: 0 10px;
 }
-.keypad { position: absolute; left: 23.8%; top: 33%; width: 52%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4.8% 5.2%; z-index: 8; }
+.keypad { position: absolute; left: 23.8%; top: 29%; width: 52%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4.8% 5.2%; z-index: 8; }
 .keypad .digit { width: 100%; }
 .keypad img { width: 100%; }
 .keypad .zero { grid-column: 2; }

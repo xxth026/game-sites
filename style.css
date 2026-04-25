@@ -36,10 +36,11 @@ img { display: block; max-width: none; user-select: none; pointer-events: none; 
 
 /* glavnaya */
 .glavnaya { background-image: url('assets/fon1.png'); }
-.glavnaya .balance-top { left: 2.2%; top: 2%; width: 24.1%; } 
+.glavnaya .balance-top { left: 2.2%; top: 1.5%; width: 24.1%; } 
 .glavnaya .balance-top img { width: 100%; }
 .glavnaya .balance-main { left: 7.7%; top: 6.77%; font-size: clamp(14px, 1.95vw, 13px); }
 .glavnaya .kub-main { right: 2.8%; top: 12.0%; width: 33.6%; }
+.glavnaya .kub-main img { width: 100%; }
 
 /* kubstr */
 .kubstr { background-image: url('assets/fon2.png'); }

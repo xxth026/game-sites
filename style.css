@@ -77,9 +77,9 @@ img { display: block; max-width: none; user-select: none; pointer-events: none; 
 .vivod-panel { left: 0; top: 11%; width: 100%; z-index: 3; }
 .vivod1 .exit2 { right: 3.5%; top: 9.65%; width: 9.55%; z-index: 8; }
 .vivod1 .exit2 img { width: 100%; }
-.vivod-title-balance { left: 47.0%; top: 31%; transform: none; font-size: clamp(14px, 2.1vw, 14px); text-align: left; min-width: 90px; }
+.vivod-title-balance { left: 47.0%; top: 27.2%; transform: none; font-size: clamp(14px, 2.1vw, 14px); text-align: left; min-width: 90px; }
 .input-window {
-  left: 23.8%; top: 65.04%; width: 52.7%; height: 3.7%;
+  left: 23.8%; top: 69%; width: 52.7%; height: 3.7%;
   border: 2px solid #3d4566; border-radius: 10px; background: white; z-index: 8;
   display: flex; align-items: center; justify-content: center;
   font-size: clamp(14px, 2.55vw, 17px); font-weight: 900; color: #3d4566;

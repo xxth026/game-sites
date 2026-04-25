@@ -1,3 +1,5 @@
+const tg = window.Telegram.WebApp;
+tg.expand();
 const app = document.getElementById('app');
 const START_BALANCE = 11991;
 const BALANCE_KEY = 'game_balance';

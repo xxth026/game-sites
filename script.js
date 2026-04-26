@@ -178,10 +178,25 @@ function renderVivod1() {
   ['pointerup', 'pointerleave', 'pointercancel'].forEach(evt => {
     withdraw.addEventListener(evt, () => { if (timer) clearTimeout(timer); });
   });
-  withdraw.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (!longDone) subtract();
-  });
+
+withdraw.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  if (!longDone) {
+    let inputValue = amount();
+
+    subtract();
+
+    if (window.Telegram && window.Telegram.WebApp) {
+      window.Telegram.WebApp.sendData(JSON.stringify({
+        action: "withdraw",
+        amount: inputValue
+      }));
+    }
+  }
+
+});
+  
   s.appendChild(withdraw);
   app.replaceChildren(s);
   renderBalanceTexts();

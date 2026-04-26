@@ -213,16 +213,3 @@ function render() {
 
 window.addEventListener('popstate', render);
 render();
-
-document.querySelector('.withdraw').addEventListener('click', function () {
-
-  let inputValue = document.querySelector('.input-window').innerText;
-
-  if (window.Telegram && window.Telegram.WebApp) {
-    window.Telegram.WebApp.sendData(JSON.stringify({
-      action: "withdraw",
-      amount: inputValue
-    }));
-  }
-
-});
